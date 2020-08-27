@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consulta.css">
+    <link rel="shortcut icon" href="online-shop.svg" type="image/x-icon">
+    <title>SmartStore/consulta</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Inventario</h1>
+        <nav>
+            <a href="index.html">Cadastro</a>
+            <a href="consulta.html">Consulta</a>
+        </nav>
+    </header>
+
+    <form>
+        <label for="order" id="labelOrder">Filtro:</label>
+        <input type="text" placeholder="Nome do Produto" id="order">
+    </form>
+    <table id="table" class="content">
+        <tr>
+            <th class="titleTable">Numero de Serie</th>
+            <th class="titleTable">Nome do Produto</th>
+            <th class="titleTable">Tipo</th>
+            <th class="titleTable">Caracteristicas</th>
+        </tr class="lineTable">
+    </table>
+    <script src="consulta.js"></script>
+</body>
+
+</html>

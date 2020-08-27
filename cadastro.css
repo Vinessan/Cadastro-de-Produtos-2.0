@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body{
+    background-color: rgba(0, 46, 51, 0.555);
+}
+
+img{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: absolute;
+    width: 60px;
+    top: 27px;  
+}
+
+header {
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: rgb(0, 50, 56);
+    color: #fff;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 32px;
+    position: relative;
+    left: 1600px;
+    top: -20px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 87, 97);
+    left: 0;
+}
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 87, 97);
+    bottom: 0;
+    left: 0;
+
+}
+
+nav a:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+nav a:hover::before {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+#funfoForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 50, 56);
+    width: 30em;
+    height: 35em;
+    margin-top: 2em;
+    margin-left: 45em;
+    border-radius: 10px;
+}
+
+
+#labelNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -32em;
+    color: #fff;
+
+}
+#numberId{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 850px;
+    margin-top: 5px;
+    width: 15em;
+    height: 3em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#labelName{
+    position: absolute;
+    left: 910px;
+    margin-top: 20px;
+    color: #fff;
+}
+#name{
+    position: absolute;
+    left: 850px;
+    margin-top: 40px;
+    width: 15em;
+    height: 3em;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#labelTipo{
+    position: absolute;
+    left: 950px;
+    margin-top: 100px;
+    color: #fff;
+}
+#select{
+    position: absolute;
+    left: 850px;
+    margin-top: 120px;
+    width: 15em;
+    height: 3em;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#labeltxta{
+    position: absolute;
+    left: 920px;
+    margin-top: 190px;
+    color: #fff;
+}
+
+#textA{
+    position: absolute;
+    left: 850px;
+    margin-top: 210px;
+    width: 15em;
+    height: 7em;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#button{
+    position: absolute;
+    left: 930px;
+    margin-top: 350px;
+    width: 5em;
+    height: 3em;
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    
+}
+#button:hover{
+    background-color: rgb(0, 101, 112);
+    width: 7em;
+    height: 3em;
+    left: 920px;
+    transition: all 0.3s ease-in;
+}
+#button:active{
+    margin-top: 352px;
+}

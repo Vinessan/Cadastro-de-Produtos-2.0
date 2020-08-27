@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="online-shop.svg" type="image/x-icon">
+    <title>SmartStore</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+
+        <h1 id="title">SmartStore</h1>
+        <nav>
+            <a href="index.html" class="navs">Cadastro</a>
+            <a href="consulta.html" class="navs">Consulta</a>
+        </nav>
+    </header>
+
+    <img src="online-shop.svg" alt="SmartStore">
+
+    <h1 id="main">Cadastro de Produtos</h1>
+
+    <!--FORM-->
+
+    <div id="funfoForm">
+
+    </div>
+    <div>
+        <form id="Form">
+            <label for="number" id="labelNumber">Numero de serie</label>
+            <input type="text" autocomplete="off" class="number" id="numberId" oninput="check()"
+                placeholder="Ex: 123.456">
+            <div id="qualquer">
+                <a type="button" onclick="funcVolta()"><img src="" id="change"></a>
+            </div>
+            <div id="minha_div"></div>
+
+            <div>
+                <label for="name" id="labelName">Nome do Produto</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="select" id="labelTipo">Tipo</label>
+                <select name="seletor" id="select">
+                    <optgroup label="Categoria do Produto">
+                        <option value="Escritorio">Escritorio</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Alimentação">Alimentação</option>
+                        <option value="Limpeza">Limpeza</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Outros...">outros...</option>
+                    </optgroup>
+                </select>
+                <div>
+                    <label for="name" id="labeltxta">Caracteristicas</label>
+                    <textarea id="textA" cols="60" rows="6"></textarea>
+                </div>
+                <div><input type="button" value="Salvar" id="button" onclick="pPush()"></div>
+            </div>
+        </form>
+
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
